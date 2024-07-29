@@ -6,7 +6,7 @@
 
 3. Click on "Mender Firmware Over-the-Air Management" and install the Mender Plugin.  
 
-4. Next you will be prompted to enter your oranganization token from the Mender Portal. If you haven't already setup an account then follow the steps on [Setting up the Mender FOTA features](#Setting up Mender).  
+4. Next you will be prompted to enter your oranganization token from the Mender Portal. If you haven't already setup an account then follow the steps on [Setting up the Mender FOTA features](#setting-up-mender).  
 
 
 # Setting up Mender
