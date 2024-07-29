@@ -27,4 +27,8 @@ After you have done that proceed with step 5.
 To actually connect a device to Mender you can use a firmware blueprint from 1NCE which will try and establish a connection to the Mender Portal.  
 1. Get the blueprint [here](https://github.com/1NCE-GmbH/blueprint-zephyr/tree/main/plugin_system/nce_fota_mender_demo)  
 > NOTE: you need to have a 1NCE workspace, if you don't have one follow the [Getting started with 1NCE](https://github.com/itsoctotv/how-do-i-develop-with-zephyr-1nce-blueprints/blob/main/howto.md).  
-2. 
+2. Build the application and flash it onto the Thingy:91.  
+3. Look at the Mender Dashboard at "Devices" after some time a new device should show up, the LED on it will turn blue and it is asking you to accept the device.  
+4. Click on "Pending device" and click on it's ID.  
+5. Under "Authorization request" hit the "Accept" button.  
+6. The new device is now connected with the Mender service.    
