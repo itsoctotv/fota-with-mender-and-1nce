@@ -30,7 +30,7 @@ To actually connect a device to Mender you can use a firmware blueprint from 1NC
 2. Build the application and flash it onto the Thingy:91.  
 3. Look at the Mender Dashboard at "Devices" after some time a new device should show up, the LED on it will turn blue and it is asking you to accept the device.  ![Pending Device](res/pending-devices.png "Pending Devices")  
 4. Click on "Pending device" and click on its ID.  
-5. Under "Authorization request" hit the "Accept" button.  
+5. Under "Authorization request" hit the "Accept" button.  ![Accept Device](res/accept-device.png "Accept Device")  
 6. The new device is now connected with the Mender service.    
 
 ## Create Mender Artifacts
