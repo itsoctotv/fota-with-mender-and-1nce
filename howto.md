@@ -48,7 +48,7 @@ From the Mender Dashboard navigate to "Releases" there you'll find a "Upload" bu
 > NOTE: you can select "All Devices" if you are just testing it but it is recommended to create a group with the device inside (even if it's just one device) because you cannot update a single device directly. To do this follow the instruction on [Create a device group](#create-a-device-group) and continue.  
 3. Optionally set the start time when the release should be deployed.  
 4. Click on create deployment.   
-![Target deploy](res/target-deploy.png "Create Deployment")    
+![Target deploy](res/deployment.png "Create Deployment")    
 5. After that you will find the status under "Deployments" -> "Active". On "View details" you can monitor the current status of the update. ![activity](res/details-deploy.png "Details on Deployment")  
 > NOTE: If you connect to the Thingy:91 via its serial communication you'll see status messages regarding the firmware update.  
 ```
