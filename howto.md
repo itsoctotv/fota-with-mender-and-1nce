@@ -40,6 +40,7 @@ To actually connect a device to Mender you can use a firmware blueprint from 1NC
 
 ## Upload Mender Artifacts
 From the Mender Dashboard navigate to "Releases" there you'll find a "Upload" button, press it and drag-an-drop your `.mender` file(s) in there and hit "Upload Artifact".   
+![Upload Artifact](res/upload-artifact.png "Upload Artifact")  
 
 ## Deploy Artifacts from Mender
 1. To deploy an artifact you have to first click on the artifact you want to deploy from the "Releases" tab. After that click on the "+" symbol on the bottom right corner and select "Create a deployment for this release".  
