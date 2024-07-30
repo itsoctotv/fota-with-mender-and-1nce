@@ -47,7 +47,8 @@ From the Mender Dashboard navigate to "Releases" there you'll find a "Upload" bu
 2. Select the device group to target.  
 > NOTE: you can select "All Devices" if you are just testing it but it is recommended to create a group with the device inside (even if it's just one device) because you cannot update a single device directly. To do this follow the instruction on [Create a device group](#create-a-device-group) and continue.  
 3. Optionally set the start time when the release should be deployed.  
-4. Click on create deployment.   ![Target deploy](res/target-deploy.png "Create Deployment")    
+4. Click on create deployment.   
+![Target deploy](res/target-deploy.png "Create Deployment")    
 5. After that you will find the status under "Deployments" -> "Active". On "View details" you can monitor the current status of the update. ![activity](res/details-deploy.png "Details on Deployment")  
 > NOTE: If you connect to the Thingy:91 via its serial communication you'll see status messages regarding the firmware update.  
 ```
@@ -58,7 +59,7 @@ Artifact name: release-v1
 Filename: mender-artifact-storage-prod-hm-eu/667a7fec1354dd34a5f824c2/d04d0f64-2c1b-452ca
 [INF]Update is available...   
 ```
-6. After some time the Thingy:91 will download the new firmware and update it you'll also see it in the deployment details that the device updated successfully. ![success](res/success-update.png "Update Success")  
+6. After some time the Thingy:91 will download the new firmware and update it you'll also see it in the deployment details that the device updated successfully. ![success](res/device-update-success.png "Update Success")  
 
 ## Create a Device Group
 From the Mender Dashboard select the "Devices" tab.  
