@@ -58,8 +58,7 @@ Artifact name: release-v1
 Filename: mender-artifact-storage-prod-hm-eu/667a7fec1354dd34a5f824c2/d04d0f64-2c1b-452ca
 [INF]Update is available...   
 ```
-6. After some time the Thingy:91 will download the new firmware and update it you'll also see it in the deployment details that the device updated successfully.  
-
+6. After some time the Thingy:91 will download the new firmware and update it you'll also see it in the deployment details that the device updated successfully. ![success](res/success-update.png "Update Success")  
 
 ## Create a Device Group
 From the Mender Dashboard select the "Devices" tab.  
