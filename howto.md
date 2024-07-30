@@ -64,7 +64,7 @@ Filename: mender-artifact-storage-prod-hm-eu/667a7fec1354dd34a5f824c2/d04d0f64-2
 ## Create a Device Group
 From the Mender Dashboard select the "Devices" tab.  
 To create a group select the device(s) you want to be in a group and click on the "+" symbol on the bottom right corner, select "Add selected device to group" and give the group a name of your choice.   
-![+](res/select-create-group.png "Add selected device to a group") ![Create Group](res/create-group.png "Create and name a group") ![Show Groups](res/show-group.png "Show Groups") 
+![+](res/select-create-group.png "Add selected device to a group") ![Create Group](res/create-group.png "Create and name a group") ![Show Groups](res/show-group.png "Show Groups")   
 After that you will see a groups with your given name appear on the left side.  
 
 
