@@ -43,7 +43,7 @@ From the Mender Dashboard navigate to "Releases" there you'll find a "Upload" bu
 ![Upload Artifact](res/upload-artifact.png "Upload Artifact")  
 
 ## Deploy Artifacts from Mender
-1. To deploy an artifact you have to first click on the artifact you want to deploy from the "Releases" tab. After that click on the "+" symbol on the bottom right corner and select "Create a deployment for this release".  
+1. To deploy an artifact you have to first click on the artifact you want to deploy from the "Releases" tab. After that click on the "+" symbol on the bottom right corner and select "Create a deployment for this release". ![Release Deploy](res/release-deploy.png "Release & Deployment")  
 2. Select the device group to target.  
 > NOTE: you can select "All Devices" if you are just testing it but it is recommended to create a group with the device inside (even if it's just one device) because you cannot update a single device directly. To do this follow the instruction on [Create a device group](#create-a-device-group) and continue.  
 3. Optionally set the start time when the release should be deployed.  
