@@ -34,7 +34,18 @@ To actually connect a device to Mender you can use a firmware blueprint from 1NC
 6. The new device is now connected with the Mender service.    
 
 ## Create Mender Artifacts
-*todo creating it*
+1. To create a Mender Artifact you need to install the [mender-artifact](https://docs.mender.io/downloads#mender-artifact) tool.  
+`sudo apt install mender-artifact`  
+2. Go to the Zephyr Mender blueprint and open the `prj.conf` file, scroll down to the bottom and change the `CONFIG_APPLICATION_VERSION` and `CONFIG_ARTIFACT_NAME` to anything you like.  
+```
+CONFIG_APPLICATION_VERSION=3
+CONFIG_ARTIFACT_NAME="release-v3"
+```
+> NOTE: It cannot be the same as before!  
+Optionally you can also go inside `src/main.c` and add some `printk()` lines.   
+Save it and rebuild the Zephyr blueprint.  
+3. 
+
 
 > NOTE: For testing you can use the pre-made Mender artifacts from the blueprint under `plugin_system/nce_fota_mender_demo/thingy_binaries/` and look for the `<filename>.mender` files.  
 
