@@ -41,7 +41,8 @@ To actually connect a device to Mender you can use a firmware blueprint from 1NC
 CONFIG_APPLICATION_VERSION=3
 CONFIG_ARTIFACT_NAME="release-v3"
 ```
-> NOTE: It cannot be the same as before!  
+> NOTE: It cannot be the same as before!    
+
 Optionally you can also go inside `src/main.c` and add some `printk()` lines or modify `led_control.c` in `src/ota/` to change the LED colors.   
 Save it and rebuild the Zephyr blueprint.  
 
@@ -57,7 +58,9 @@ After building your application use this command to create a Mender Artifact out
 
 `<BINARY_FILE>`. The binary to be converted to a mender artifact. After building the application the to-be-used binary is at `<NRF_ZEPHYR_WORKSPACE>/build/zephyr/app_update.bin` where `<NRF_ZEPHYR_WORKSPACE>` is the location you installed and build the Zephyr application from.  
 After you set everything execute the command.  
-This will create a Mender artifact in the current working directory.  
+  
+This will create a Mender artifact in the current working directory.   
+
 Now you can continue with [Uploading Mender Artifacts](#upload-mender-artifacts)  
 
 > NOTE: For testing you can use the pre-made Mender artifacts from the blueprint under `plugin_system/nce_fota_mender_demo/thingy_binaries/` and look for the `<filename>.mender` files.  
