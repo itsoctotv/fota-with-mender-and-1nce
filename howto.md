@@ -42,10 +42,22 @@ CONFIG_APPLICATION_VERSION=3
 CONFIG_ARTIFACT_NAME="release-v3"
 ```
 > NOTE: It cannot be the same as before!  
-Optionally you can also go inside `src/main.c` and add some `printk()` lines.   
+Optionally you can also go inside `src/main.c` and add some `printk()` lines or modify `led_control.c` in `src/ota/` to change the LED colors.   
 Save it and rebuild the Zephyr blueprint.  
-3. 
 
+### Mender Artifact CLI Tool
+
+After building your application use this command to create a Mender Artifact out of the Zephyr application:  
+`mender-artifact write module-image  -t <DEVICE_TYPE>  -o <FILE_NAME>.mender  -T <PAYLOAD_TYPE>  -n <ARTIFACT_NAME>  -f <BINARY_FILE> --compression none`  
+`<DEVICE_TYPE>`: The type of device ysou are using in this example it's the Thingy:91 `thingy`.  
+`<FILE_NAME>`: File name for the final .mender artifact.  
+`<PAYLOAD_TYPE>`: Can be set how you like for this example we use the version `release-v3`.  
+`<ARTIFACT_NAME>`: The name of the artifact which will identify the artifact we also set that to the version `release-v3`.  
+> NOTE: It's important to change the artifact name when uploading a new artifact if two artifacts have the same name or if the to-be-updated artifact has the same name as the currently-running artifact it won't deploy the update.  
+`<BINARY_FILE>`. The binary to be converted to a mender artifact. After building the application the to-be-used binary is at `<NRF_ZEPHYR_WORKSPACE>/build/zephyr/app_update.bin` where `<NRF_ZEPHYR_WORKSPACE>` is the location you installed and build the Zephyr application from.  
+After you set everything execute the command.  
+This will create a Mender artifact in the current working directory.  
+Now you can continue with [Uploading Mender Artifacts](#upload-mender-artifacts)  
 
 > NOTE: For testing you can use the pre-made Mender artifacts from the blueprint under `plugin_system/nce_fota_mender_demo/thingy_binaries/` and look for the `<filename>.mender` files.  
 
