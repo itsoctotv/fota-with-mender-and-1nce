@@ -54,6 +54,7 @@ After building your application use this command to create a Mender Artifact out
 `<PAYLOAD_TYPE>`: Can be set how you like for this example we use the version `release-v3`.  
 `<ARTIFACT_NAME>`: The name of the artifact which will identify the artifact we also set that to the version `release-v3`.  
 > NOTE: It's important to change the artifact name when uploading a new artifact if two artifacts have the same name or if the to-be-updated artifact has the same name as the currently-running artifact it won't deploy the update.  
+
 `<BINARY_FILE>`. The binary to be converted to a mender artifact. After building the application the to-be-used binary is at `<NRF_ZEPHYR_WORKSPACE>/build/zephyr/app_update.bin` where `<NRF_ZEPHYR_WORKSPACE>` is the location you installed and build the Zephyr application from.  
 After you set everything execute the command.  
 This will create a Mender artifact in the current working directory.  
